@@ -13,7 +13,7 @@ El proyecto combina **Laravel** en el backend con **Vue 3** en el frontend. **In
 - Laravel Breeze para la base del sistema de autenticación.
 - Inertia.js 2.
 - MySQL.
-- Sistema de sesiones, caché y colas de Laravel, configurable mediante `.env`.
+- Sistema de sesiones y caché de Laravel, configurable mediante `.env`.
 
 ### Frontend
 
@@ -268,9 +268,7 @@ composer run dev
 
 Este script inicia de forma concurrente:
 
-- el servidor de desarrollo de Laravel;
-- el worker de la cola;
-- Laravel Pail para visualizar logs;
+- El servidor de desarrollo de Laravel;
 - Vite para el frontend.
 
 Si solo se necesita ejecutar Vite:
