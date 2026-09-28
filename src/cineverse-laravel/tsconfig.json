@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "jsx": "preserve",
+        "strict": true,
+        "isolatedModules": true,
+        "target": "ESNext",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "paths": {
+            "@/*": ["./resources/js/*"],
+            "@/assets/*": ["./resources/js/cineverse/assets/*"],
+            "@/core/*": ["./resources/js/cineverse/core/*"],
+            "@/features/*": ["./resources/js/cineverse/features/*"],
+            "@/layouts/*": ["./resources/js/cineverse/layouts/*"],
+            "@/shared/*": ["./resources/js/cineverse/shared/*"],
+            "@/views/*": ["./resources/js/cineverse/views/*"],
+            "ziggy-js": ["./vendor/tightenco/ziggy"]
+        }
+    },
+    "include": ["resources/js/**/*.ts", "resources/js/**/*.vue"]
+}

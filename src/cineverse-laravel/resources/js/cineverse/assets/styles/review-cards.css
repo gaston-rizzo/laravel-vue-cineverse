@@ -1,0 +1,274 @@
+/* ============================================================================
+ * review-cards.css
+ * ============================================================================
+ *
+ * Estilos compartidos para las reviews, usados en:
+ *  - MovieReviews.vue      
+ *  - ProfileView.vue       
+ *  - MyReviewsView.vue     
+ *
+ * Import (no scoped, para poder compartirlo entre componentes):
+ *   import "@/assets/styles/review-cards.css";
+ *
+ * Si algún componente necesita un ajuste puntual, hacerlo en su propio
+ * <style scoped> sin modificar este archivo, para no romper a los otros
+ * dos consumidores.
+ * ============================================================================ */
+
+/* ==========================================================================
+ * LOADING / EMPTY / ERROR
+ * Estados de carga, listado vacío y error al pedir las reseñas.
+ *
+ * Responsabilidades:
+ * - Loading: mensaje simple centrado mientras se cargan las reseñas
+ * - No reviews: mensaje centrado cuando no hay reseñas para mostrar
+ * - Error: banner con fondo y borde rojo cuando falla la carga
+ * ========================================================================== */
+
+.reviews-loading {
+  padding: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, .6);
+  font-weight: 500;
+}
+
+.no-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 50px 20px;
+  color: rgba(255, 255, 255, .5);
+}
+
+.no-reviews svg {
+  width: 42px;
+  height: 42px;
+  color: rgba(255, 255, 255, .28);
+  stroke-width: 1.8;
+}
+
+.no-reviews p {
+  margin: 0;
+  font-size: .95rem;
+  font-weight: 500;
+  letter-spacing: .03em;
+  color: rgba(255, 255, 255, .58);
+}
+
+.reviews-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 20px;
+  border-radius: 18px;
+  text-align: center;
+
+  background: linear-gradient(
+    155deg,
+    rgba(239, 68, 68, .10),
+    rgba(45, 18, 18, .4)
+  );
+  border: 1px solid rgba(239, 68, 68, .3);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, .3),
+    0 0 24px rgba(239, 68, 68, .08);
+}
+
+.reviews-error svg {
+  color: #fca5a5;
+}
+
+.reviews-error p {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #fecaca;
+  max-width: 320px;
+}
+
+/* ==========================================================================
+ * SECTION TITLE
+ * Título de sección (ej: "Últimas reseñas") con línea decorativa.
+ *
+ * Responsabilidades:
+ * - Texto con degradado blanco a violeta/rosa
+ * - Darle un resplandor violeta al ícono que acompaña al título
+ * ========================================================================== */
+
+.section-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: .6px;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #d8b4fe,
+    #f472b6
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 0 18px rgba(192, 132, 252, .25);
+}
+
+/* línea con degradado que se extiende a la derecha del título. */
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  border-radius: 999px;
+  margin-left: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 132, 252, .8),
+    rgba(244, 114, 182, .45),
+    transparent
+  );
+}
+
+.section-title svg {
+  color: #c084fc;
+  filter: drop-shadow(0 0 8px rgba(192, 132, 252, .5));
+}
+
+/* ==========================================================================
+ * GRID
+ * Grilla responsive de tarjetas de reseñas.
+ *
+ * Responsabilidades:
+ * - auto-fill / minmax(280px, 1fr): columnas que se adaptan al ancho
+ * ========================================================================== */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+/* ==========================================================================
+ * CARD CONTENT
+ * Contenido común de las tarjetas (usado en ProfileView y MyReviewsView).
+ *
+ * Responsabilidades:
+ * - Header: separar el título de la película de las estrellas, con línea
+ *   divisoria inferior
+ * - Movie title: mostrarse como píldora violeta con texto truncado
+ * - Comment: texto del comentario, respetando saltos de línea
+ * - Date: fecha en gris, siempre pegada al final de la tarjeta
+ * ========================================================================== */
+
+/* Usado en ProfileView.vue y MyReviewsView.vue */
+.review-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(167, 139, 250, .15);
+}
+
+/* Título de la película dentro de una review (MyReviewsView / ProfileView) */
+.review-movie-title {
+  display: inline-flex;
+  align-items: center;
+  max-width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  background: rgba(124, 58, 237, .12);
+  border: 1px solid rgba(192, 132, 252, .18);
+  color: #f5f3ff;
+
+  font-size: .9rem;
+  font-weight: 700;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  transition: .25s;
+}
+
+.review-comment {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: .97rem;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: .15px;
+    color: rgba(255,255,255,.90);
+    white-space: pre-line;
+    overflow-wrap: break-word;   
+    word-break: break-word;   
+}
+
+.review-date {
+  font-size: .78rem;
+  letter-spacing: .3px;
+  opacity:.7;
+  margin-top: auto;
+  font-size: .75rem;
+  color: rgba(255, 255, 255, .4);
+}
+
+/* ==========================================================================
+ * LOAD MORE
+ * Botón para cargar más reseñas 
+ *
+ * Responsabilidades:
+ * - Fondo degradado violeta/rosa, centrado
+ * - Resplandor violeta al pasar el mouse
+ * - Verse apagado y bloquear el click mientras carga, o cuando ya no hay más
+ *   reseñas por traer
+ * ========================================================================== */
+
+ /* Usado en MovieReviews.vue y MyReviewsView.vue */
+.btn-load-more {
+  align-self: center;
+  padding: 12px 32px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 999px;
+
+  background: linear-gradient(120deg, rgba(124,58,237,.2), rgba(236,72,153,.2));
+  color: white;
+  font-weight: 700;
+  font-size: .9rem;
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.btn-load-more:not(:disabled):hover {
+  border-color: rgba(255, 255, 255, .25);
+  box-shadow: 0 0 24px rgba(124, 58, 237, .25);  
+}
+
+.btn-load-more:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+ * RESPONSIVE
+ * ========================================================================== */
+
+@media (max-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}

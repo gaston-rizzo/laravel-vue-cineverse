@@ -1,0 +1,282 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "movies": "Películas",
+    "upcoming": "Estrenos",
+    "favorites": "Favoritos"
+  },
+  "header": {
+    "searchPlaceholder": "Buscar una película"
+  },
+  "footer": {
+    "tmdbAttribution": "Datos de películas proporcionados por TMDB"
+  },
+  "home": {
+    "ticker": {
+      "globalTrends": "Tendencias globales en tiempo real",
+      "newReleases": "Nuevos estrenos cada semana",
+      "topRatedUsers": "Las mejor valoradas por usuarios"
+    },
+    "trending": "En tendencia",
+    "subTrending": "Películas en tendencia esta semana",
+    "nowPlaying": "En cartelera",
+    "subNowPlaying": "En cines actualmente",
+    "topRated": "Mejor valoradas",
+    "subTopRated": "Las mejores películas de todos los tiempos"
+  },
+  "movies": {
+    "noDescription": "Sin descripción disponible.",
+    "viewDetails": "Ver detalles",
+    "favoriteLimitReached": "Llegaste al máximo de 20 favoritos"
+  },
+  "movieDetail": {    
+    "loadingTitle": "Cargando película",
+    "loadingSubtitle": "Preparando la experiencia...",
+    "playTrailer": "Reproducir tráiler",
+    "similarMovies": "Películas similares",
+    "notFoundTitle": "Película no encontrada",
+    "notFoundMessage": "La película que buscaste no existe.",
+    "backToMovies": "Volver a películas",
+    "tabs": {
+      "cast": "Reparto",
+      "reviews": "Reseñas",
+      "similar": "Similares"
+    }
+  },
+  "cast": {
+    "title": "Reparto",
+    "notAvailable": "Información de reparto no disponible."
+  },
+  "similar": {
+    "noMovies": "No se encontraron películas similares."
+  },
+  "personDetail": {
+    "loadingTitle": "Cargando perfil...",    
+    "filmography": "Filmografía",
+    "knownFor": "Conocido por",    
+    "playedAs": "como",
+    "notFoundTitle": "Persona no encontrada",
+    "notFoundMessage": "El perfil que buscas no existe.",
+    "biographyNotAvailable": "Biografía no disponible"
+  },
+  "common": {
+    "searchingMovies": "Buscando películas...",
+    "errorTitle": "No pudimos cargar las películas.",
+    "errorMessage": "Intentá nuevamente en unos segundos.",
+    "emptyResultsTitle": "No encontramos películas",
+    "emptyResultsLine1": "Los filtros actuales no devolvieron resultados.",
+    "emptyResultsLine2": "Prueba ampliarlos o reiniciarlos.",
+    "showMore" : "Mostrar más",
+    "browserWarning": "Para una mejor experiencia, te recomendamos usar Chrome, Edge u Opera.",
+    "selectOption": "Seleccionar opción",
+    "close": "Cerrar"
+  },
+  "filters": {
+    "header": {
+      "customizePanels": "Personalizar paneles",
+      "saveOrder": "Listo"
+    },
+    "panels": {
+      "list": "Listado",
+      "filters": "Filtros",
+      "genres": "Géneros",
+      "sort": "Ordenar"
+    },
+    "typesOptions": {
+      "discover": "Descubrir",
+      "popular": "Populares",
+      "now_playing": "En cartelera",
+      "upcoming": "Próximamente",
+      "top_rated": "Mejor valoradas"
+    },
+    "search": "Buscar",
+    "searchPlaceholder": "Escribí mínimo 3 caracteres",
+    "from": "Desde",
+    "to": "Hasta",
+    "years": "Años",
+    "year": "Año",
+    "rating": "Calificación",    
+    "sortBy": "Ordenar",
+    "sortOptions": {
+      "none": "Sin ordenar",
+      "mostPopular": "Más populares",
+      "mostRecent": "Más recientes",
+      "oldest": "Más antiguos",
+      "bestRating": "Mejor rating"
+    },
+    "advancedFiltersOnlyInDiscover": "Filtros avanzados solo en Descubrir"
+  },
+  "favorites": {
+    "title": "Favoritos",
+    "clearAll": "Limpiar todo",
+    "emptyTitle": "Aún no tienes favoritos",
+    "emptySubtitle": "Empieza a agregar películas para crear tu colección personal.",
+    "modal": {
+      "title": "Limpiar favoritos",
+      "confirmTitle": "¿Eliminar todas las películas guardadas?",
+      "confirmMessage": "Esta acción eliminará permanentemente tu lista de favoritos.",
+      "cancel": "Cancelar",
+      "confirm": "Eliminar todo"
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "message": "La página que estás buscando no existe.",
+    "goHome": "Volver al inicio"
+  },
+  "auth": {
+    "backToLogin": "Volver al inicio de sesión",
+    "validation": {
+      "required": "El campo es obligatorio.",
+      "invalidEmail": "El email no es válido."      
+    },
+    "register": {
+      "title": "Crear cuenta",
+      "subtitle": "Unite a CineVerse",
+      "username": "Usuario",
+      "email": "Email",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "submit": "Crear cuenta",
+      "successTitle": "¡Bienvenido a CineVerse!",
+      "successSubtitle": "Tu cuenta fue creada correctamente.",      
+      "verifyEmailMessage": "Te enviamos un email con un enlace para activar tu cuenta. Revisá tu bandeja de entrada y, si no lo encontrás, verificá también la carpeta de spam.",
+      "validation": {        
+        "usernameMin": "El usuario debe tener al menos 3 caracteres.",
+        "usernameMax": "El usuario no puede superar los 20 caracteres.",
+        "usernameInvalid": "Solo se permiten letras, números y guiones bajos (_).",        
+        "emailMax": "El email no puede superar los 80 caracteres.",
+        "passwordMin": "La contraseña debe tener al menos 8 caracteres.",
+        "passwordMax": "La contraseña no puede superar los 32 caracteres",
+        "passwordUppercase": "La contraseña debe contener al menos una letra mayúscula.",
+        "passwordLowercase": "La contraseña debe contener al menos una letra minúscula.",
+        "passwordNumber": "La contraseña debe contener al menos un número.",
+        "passwordSpecialCharacter": "La contraseña debe contener al menos un carácter especial.",
+        "passwordsDoNotMatch": "Las contraseñas no coinciden."
+      },
+      "passwordRequirements": {        
+        "minLength": "Mínimo: 8 caracteres",
+        "uppercase": "Una mayúscula",
+        "lowercase": "Una minúscula",
+        "number": "Un número",
+        "symbol": "Un símbolo",
+        "weak": "Débil",
+        "medium": "Media",
+        "strong": "Fuerte"
+      }
+    },
+    "verifyEmail": {
+      "verifyingTitle": "Verificando cuenta",
+      "verifyingMessage": "Estamos comprobando el enlace de verificación. Esto solo tomará unos segundos.",
+      "successTitle": "¡Cuenta verificada!",
+      "successMessage": "Tu cuenta fue activada correctamente. Ya puedes iniciar sesión.",
+      "invalidTitle": "Enlace inválido o expirado",
+      "invalidMessage": "El enlace de verificación no es válido o ya fue utilizado."      
+    },
+    "login": {
+      "title": "Iniciar sesión",
+      "subtitle": "Bienvenido de nuevo.",
+      "username": "Usuario",
+      "email": "Email",
+      "password": "Contraseña",
+      "submit": "Ingresar",
+      "noAccount": "¿No tienes una cuenta?",
+      "register": "Crear una cuenta",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "resendVerificationEmail": "Reenviar correo de verificación"
+    },
+    "forgotPassword": {
+      "title": "¿Olvidaste tu contraseña?",
+      "subtitle": "Ingresá el correo asociado a tu cuenta y, si existe, te enviaremos un enlace para restablecer tu contraseña.",
+      "email": "Email",
+      "submit": "Enviar enlace"      
+    },
+    "resetPassword": {
+      "title": "Restablecer contraseña",
+      "subtitle": "Ingresá una nueva contraseña para tu cuenta.",
+      "password": "Nueva contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "submit": "Restablecer contraseña",
+      "invalidTitle": "Enlace inválido",
+      "invalidMessage": "El enlace para restablecer la contraseña no es válido.",
+      "passwordsDoNotMatch": "Las contraseñas no coinciden.",
+      "checkingTitle": "Verificando enlace...",
+      "checkingMessage": "Estamos comprobando que tu enlace de recuperación sea válido."
+    },
+    "errors": {
+      "usernameAlreadyExists": "Ese usuario ya existe.",
+      "emailAlreadyExists": "Ese email ya está registrado.",
+      "invalidCredentials": "Usuario o contraseña incorrectos.",      
+      "authRequired": "Debes iniciar sesión.",
+      "invalidJson": "La solicitud enviada al servidor es inválida.",
+      "emailDeliveryFailed": "No pudimos enviar el correo de verificación. Intenta más tarde.",
+      "internalServerError": "Ocurrió un error interno. Inténtelo nuevamente.",
+      "unknownError": "Ocurrió un error inesperado.",      
+      "loginTemporarilyBlocked": "Demasiados intentos de inicio de sesión. Inténtalo más tarde.",
+      "emailNotVerified": "Tu correo electrónico aún no ha sido verificado.",
+      "invalidOrExpiredResetToken": "El enlace para restablecer la contraseña es inválido o ha expirado."
+    },
+    "success": {
+      "registered": "La cuenta fue creada correctamente.",
+      "loggedIn": "Sesión iniciada correctamente.",
+      "loggedOut": "Sesión cerrada correctamente.",
+      "verificationEmailSentTitle": "Correo de verificación enviado",
+      "verificationEmailSentMessage": "Si existe una cuenta asociada a este correo electrónico y aún no fue verificada, te enviamos un nuevo correo de verificación. Revisá tu bandeja de entrada y, si no lo encontrás, verificá también la carpeta de spam.",
+      "resendSuccessTitle": "¡Listo!",
+      "resendSuccessSubtitle": "Te enviamos un nuevo correo de verificación.",      
+      "passwordResetEmailSentTitle": "¡Listo! Revisá tu correo",
+      "passwordResetEmailSentMessage": "Si existe una cuenta asociada con este correo electrónico, te enviamos un enlace para restablecer tu contraseña. Revisá también la carpeta de spam.",
+      "passwordResetSuccessTitle": "¡Contraseña actualizada!",
+      "passwordResetSuccessMessage": "Tu contraseña se restableció correctamente. Ya podés iniciar sesión con tu nueva contraseña."
+    }
+  },
+  "userMenu": {
+    "profile": "Mi perfil",
+    "favorites": "Favoritos",
+    "logout": "Cerrar sesión"
+  },
+  "reviews": {
+    "writeReview": "Escribir una reseña",
+    "editReview": "Editar reseña",
+    "newReview": "Nueva reseña",
+    "commentPlaceholder": "Contanos qué te pareció la película...",
+    "yourReview": "Tu reseña",
+    "noReviews": "Todavía no hay reseñas para esta película.",
+    "loadMore": "Ver más reseñas",
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirmDelete": "¿Seguro?",
+    "deleting": "Eliminando...",
+    "reviews" : "reseñas",
+    "averageRating": "Puntaje promedio",
+    "yourRating": "Tu puntuación",
+    "errors": {
+      "invalidMovieID": "La película indicada no es válida.",
+      "invalidRating": "Seleccioná una puntuación entre 1 y 5.",
+      "commentRequired": "El comentario es obligatorio.",
+      "commentTooShort": "El comentario es demasiado corto (mínimo 20 caracteres).",
+      "commentTooLong": "El comentario es demasiado largo (máximo 1000 caracteres).",
+      "reviewAlreadyExists": "Ya tenés una reseña para esta película.",
+      "reviewNotFound": "La reseña ya no existe.",
+      "notReviewOwner": "Esta reseña no te pertenece.",
+      "authRequired": "Tu sesión expiró, iniciá sesión nuevamente.",
+      "invalidJson": "Ocurrió un error al enviar los datos.",
+      "internalServerError": "Ocurrió un error interno. Inténtalo nuevamente.",
+      "unknownError": "Ocurrió un error, intentá nuevamente.",      
+      "loadError": "Ocurrió un error al cargar las reseñas.",
+      "deleteFailed": "No se pudo eliminar la reseña."
+    }
+  },
+  "profile": {
+    "memberSince": "Miembro desde",
+    "reviewsCount": "Reseñas",
+    "latestReviews": "Últimas reseñas",
+    "noReviewsYet": "Todavía no has escrito ninguna reseña.",
+    "backToProfile": "Volver al perfil",
+    "allReviewsTitle": "Todas tus reseñas"
+  }
+}

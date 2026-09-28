@@ -1,0 +1,280 @@
+{
+  "nav": {
+    "home": "Home",
+    "movies": "Movies",
+    "upcoming": "Upcoming",
+    "favorites": "Favorites"
+  },
+  "header": {
+    "searchPlaceholder": "Search for a movie"
+  },
+  "footer": {
+    "tmdbAttribution": "Movie data provided by TMDB"
+  },
+  "home": {
+    "ticker": {
+      "globalTrends": "Global trends in real time",
+      "newReleases": "New releases every week",
+      "topRatedUsers": "Top rated by users"
+    },
+    "trending": "Trending",
+    "subTrending": "Trending movies this week",
+    "nowPlaying": "Now playing",
+    "subNowPlaying": "Currently in theaters",
+    "topRated": "Top rated",
+    "subTopRated": "The best movies of all time"
+  },
+  "movies": {
+    "noDescription": "No description available.",
+    "viewDetails": "View Details",
+    "favoriteLimitReached": "You reached the limit of 20 favorites"
+  },
+  "movieDetail": {    
+    "loadingTitle": "Loading movie",
+    "loadingSubtitle": "Preparing the experience...",
+    "playTrailer": "Play trailer",
+    "similarMovies": "Similar movies",
+    "notFoundTitle": "Movie not found",
+    "notFoundMessage": "The movie you are looking for does not exist.",
+    "backToMovies": "Back to movies",
+    "tabs": {
+      "cast": "Cast",
+      "reviews": "Reviews",
+      "similar": "Similar"
+    }
+  },
+  "cast": {    
+    "title": "Cast",
+    "notAvailable": "Cast information is not available."
+  },
+  "similar": {
+    "noMovies": "No similar movies were found."
+  },
+  "personDetail": {
+    "loadingTitle": "Loading profile...",    
+    "filmography": "Filmography",
+    "knownFor": "Known for",    
+    "playedAs": "as",
+    "notFoundTitle": "Person not found",
+    "notFoundMessage": "The profile you are looking for does not exist.",    
+    "biographyNotAvailable": "Biography not available"
+  },
+  "common": {
+    "searchingMovies": "Searching movies...",
+    "errorTitle": "We couldn't load the movies.",
+    "errorMessage": "Please try again in a few seconds.",
+    "emptyResultsTitle": "No movies found",
+    "emptyResultsLine1": "The current filters returned no results.",
+    "emptyResultsLine2": "Try broadening them or resetting them.",
+    "showMore" : "Show More",
+    "browserWarning": "For the best experience, we recommend using Chrome, Edge, or Opera.",
+    "selectOption": "Select option",
+    "close": "Close"
+  },
+  "filters": {
+    "header": {
+      "customizePanels": "Customize panels",
+      "saveOrder": "Done"
+    },
+    "panels": {
+      "list": "List",
+      "filters": "Filters",
+      "genres": "Genres",
+      "sort": "Sort"
+    },
+    "typesOptions": {
+      "discover": "Discover",
+      "popular": "Popular",
+      "now_playing": "Now Playing",
+      "upcoming": "Upcoming",
+      "top_rated": "Top Rated"
+    },
+    "search": "Search",
+    "searchPlaceholder": "Type at least 3 characters",
+    "from": "From",
+    "to": "To",
+    "years": "Years",
+    "year": "Year",
+    "rating": "Rating",
+    "sortBy": "Sort by",
+    "sortOptions": {
+      "none": "No sorting",
+      "mostPopular": "Most popular",
+      "mostRecent": "Most recent",
+      "oldest": "Oldest",
+      "bestRating": "Best rating"
+    },
+    "advancedFiltersOnlyInDiscover": "Advanced filters only in Discover"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "clearAll": "Clear all",
+    "emptyTitle": "No favorites yet",
+    "emptySubtitle": "Start adding movies to build your personal collection.",
+    "modal": {
+      "title": "Clear favorites",
+      "confirmTitle": "Remove all saved movies?",
+      "confirmMessage": "This action will permanently delete your favorites list.",
+      "cancel": "Cancel",
+      "confirm": "Delete all"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist.",
+    "goHome": "Go home"
+  },
+    "auth": {
+    "backToLogin": "Back to sign in",
+    "validation": {
+      "required": "The field is required.",
+      "invalidEmail": "The email address is not valid."
+    },
+    "register": {
+      "title": "Create account",
+      "subtitle": "Join CineVerse",
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "submit": "Create account",
+      "successTitle": "Welcome to CineVerse!",
+      "successSubtitle": "Your account has been created successfully.",      
+      "verifyEmailMessage": "We've sent you an email with a link to activate your account. Check your inbox, and if you can't find it, be sure to look in your spam folder as well.",
+      "validation": {
+        "usernameMin": "Username must be at least 3 characters long.",
+        "usernameMax": "Username cannot exceed 20 characters.",
+        "usernameInvalid": "Only letters, numbers, and underscores (_) are allowed.",
+        "emailMax": "Email cannot exceed 80 characters.",
+        "passwordMin": "Password must be at least 8 characters long.",
+        "passwordMax": "Password cannot exceed 32 characters.",
+        "passwordUppercase": "Password must contain at least one uppercase letter.",
+        "passwordLowercase": "Password must contain at least one lowercase letter.",
+        "passwordNumber": "Password must contain at least one number.",
+        "passwordSpecialCharacter": "Password must contain at least one special character.",
+        "passwordsDoNotMatch": "Passwords do not match."
+      },      
+      "passwordRequirements": {
+        "minLength": "Minimum: 8 characters",
+        "uppercase": "One uppercase letter",
+        "lowercase": "One lowercase letter",
+        "number": "One number",
+        "symbol": "One special character",
+        "weak": "Weak",
+        "medium": "Medium",
+        "strong": "Strong"
+      }
+    },
+    "verifyEmail": {
+      "verifyingTitle": "Verifying account",
+      "verifyingMessage": "We're verifying your account. This will only take a few seconds.",
+      "successTitle": "Account verified!",
+      "successMessage": "Your account has been successfully activated. You can now sign in.",
+      "invalidTitle": "Invalid or expired link",
+      "invalidMessage": "The verification link is invalid or has already been used."      
+    },
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Welcome back",
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "register": "Create one",
+      "forgotPassword": "Forgot your password?",
+      "resendVerificationEmail": "Resend verification email"
+    },
+    "forgotPassword": {
+      "title": "Forgot your password?",
+      "subtitle": "Enter the email associated with your account. If it exists, we'll send you a password reset link.",
+      "email": "Email",
+      "submit": "Send reset link"
+    },
+    "resetPassword": {
+      "title": "Reset password",
+      "subtitle": "Enter a new password for your account.",
+      "password": "New password",
+      "confirmPassword": "Confirm password",
+      "submit": "Reset password",
+      "invalidTitle": "Invalid link",
+      "invalidMessage": "The password reset link is not valid.",
+      "passwordsDoNotMatch": "Passwords do not match.",
+      "checkingTitle": "Verifying link...",
+      "checkingMessage": "We're checking that your recovery link is valid."
+    },
+    "errors": {
+      "usernameAlreadyExists": "The username is already taken.",
+      "emailAlreadyExists": "The email is already registered.",
+      "invalidCredentials": "Invalid username or password.",
+      "authRequired": "You must sign in.",
+      "invalidJson": "Invalid request.",
+      "emailDeliveryFailed": "We could not send the verification email. Please try again later.",
+      "internalServerError": "Something went wrong. Please try again.",
+      "unknownError": "An unexpected error occurred.",
+      "loginTemporarilyBlocked": "Too many login attempts. Please try again later.",
+      "emailNotVerified": "Your email address has not been verified yet.",
+      "invalidOrExpiredResetToken": "The password reset link is invalid or has expired."
+    },
+    "success": {
+      "registered": "Your account has been created successfully.",
+      "loggedIn": "Signed in successfully.",
+      "loggedOut": "Signed out successfully.",
+      "verificationEmailSentTitle": "Verification email sent",
+      "verificationEmailSentMessage": "If an account associated with this email address exists and has not yet been verified, we have sent a new verification email. Please check your inbox, and if you don't find it, be sure to check your spam folder as well.",
+      "passwordResetEmailSentTitle": "You're all set! Check your email",      
+      "passwordResetEmailSentMessage": "If an account exists for this email address, we've sent you a password reset link. Please check your inbox and spam folder.",
+      "passwordResetSuccessTitle": "Password updated!",
+      "passwordResetSuccessMessage": "Your password has been reset successfully. You can now sign in with your new password."
+    }
+  },
+  "userMenu": {
+    "profile": "My Profile",
+    "favorites": "Favorites",
+    "logout": "Sign Out"
+  },
+  "reviews": {
+    "writeReview": "Write a Review",
+    "editReview": "Edit Review",
+    "newReview": "New Review",
+    "commentPlaceholder": "Tell us what you thought about the movie...",
+    "yourReview": "Your Review",
+    "noReviews": "There are no reviews for this movie yet.",
+    "loadMore": "Load More Reviews",
+    "loading": "Loading...",
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure?",
+    "deleting": "Deleting...",
+    "reviews" : "reviews",
+    "averageRating": "Average rating",
+    "yourRating": "Your rating",
+    "errors": {
+      "invalidMovieID": "The selected movie is invalid.",
+      "invalidRating": "Please select a rating between 1 and 5.",
+      "commentRequired": "A comment is required.",
+      "commentTooShort": "The comment is too short (minimum 20 characters).",
+      "commentTooLong": "The comment is too long (maximum 1000 characters).",
+      "reviewAlreadyExists": "You have already reviewed this movie.",
+      "reviewNotFound": "This review no longer exists.",
+      "notReviewOwner": "You do not own this review.",
+      "authRequired": "Your session has expired. Please sign in again.",
+      "invalidJson": "An error occurred while sending the data.",
+      "internalServerError": "An internal error occurred. Please try again.",
+      "unknownError": "An error occurred. Please try again.",      
+      "loadError": "An error occurred while loading the reviews.",
+      "deleteFailed": "Failed to delete the review."
+    }
+  },  
+  "profile": {
+    "memberSince": "Member since",
+    "reviewsCount": "Reviews",
+    "latestReviews": "Latest Reviews",
+    "noReviewsYet": "You haven't written any reviews yet.",
+    "backToProfile": "Back to profile",
+    "allReviewsTitle": "All your reviews"
+  }
+}

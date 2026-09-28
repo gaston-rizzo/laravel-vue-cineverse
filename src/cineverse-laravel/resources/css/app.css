@@ -1,0 +1,69 @@
+/*
+ * CSS global de Laravel/Vite.
+ *
+ * Se mantiene aunque las vistas default de Breeze fueron eliminadas porque
+ * CineVerse todavía depende del reset/base de Tailwind para normalizar fuentes,
+ * botones, iconos y otros estilos base del navegador.
+ */
+
+@import "tailwindcss";
+
+.login-page,
+.register-page,
+.forgot-password-page,
+.verify-email-page,
+.reset-password-page {
+    position: relative;
+    overflow: visible;
+    color: #e5e7eb;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: #0b0f19;
+    isolation: isolate;
+}
+
+.login-page::before,
+.register-page::before,
+.forgot-password-page::before,
+.verify-email-page::before,
+.reset-password-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(229, 9, 20, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(124, 58, 237, 0.18), transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(30, 64, 175, 0.18), transparent 50%),
+        linear-gradient(180deg, #0b0f19 0%, #0f172a 40%, #0b0f19 100%);
+    filter: blur(90px);
+    animation: cineverse-auth-background-drift 45s ease-in-out infinite alternate;
+}
+
+.login-page::after,
+.register-page::after,
+.forgot-password-page::after,
+.verify-email-page::after,
+.reset-password-page::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("@/assets/noise.svg");
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+@keyframes cineverse-auth-background-drift {
+    0% {
+        transform: translate3d(-4%, -2%, 0) scale(1);
+    }
+
+    50% {
+        transform: translate3d(3%, 2%, 0) scale(1.1);
+    }
+
+    100% {
+        transform: translate3d(-2%, 4%, 0) scale(1.05);
+    }
+}

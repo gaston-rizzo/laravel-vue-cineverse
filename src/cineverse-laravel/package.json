@@ -1,0 +1,39 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vue-tsc && vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@inertiajs/vue3": "^2.0.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/vite": "4.2.1",
+        "@vitejs/plugin-vue": "^6.0.0",
+        "autoprefixer": "^10.4.12",
+        "axios": "^1.11.0",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^2.0.0",
+        "postcss": "^8.4.31",
+        "tailwindcss": "4.2.1",
+        "typescript": "^5.6.3",
+        "vite": "^7.0.7",
+        "vue": "^3.4.0",
+        "vue-tsc": "^2.0.24"
+    },
+    "dependencies": {
+        "@tanstack/vue-query": "^5.101.2",
+        "@vueuse/core": "^14.3.0",
+        "@vueuse/motion": "^3.0.3",
+        "lucide-vue-next": "^1.0.0",
+        "pinia": "^3.0.4",
+        "pinia-plugin-persistedstate": "^4.7.1",
+        "swiper": "^14.0.5",
+        "vue-i18n": "^11.4.6",
+        "vue-multiselect": "^3.5.0",
+        "vue-router": "^5.1.0",
+        "vue-slider-component": "^4.1.0-beta.7",
+        "vuedraggable": "^4.1.0"
+    }
+}
