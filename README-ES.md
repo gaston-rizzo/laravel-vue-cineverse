@@ -99,7 +99,7 @@ La forma integrada de iniciar el proyecto es:
 composer run dev
 ```
 
-Este script inicia de forma concurrente el servidor de Laravel, el proceso de cola, Laravel Pail y Vite.
+Este script inicia de forma concurrente el servidor de Laravel y Vite.
 
 También pueden ejecutarse Laravel y Vite por separado:
 

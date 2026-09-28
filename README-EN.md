@@ -99,7 +99,7 @@ The integrated way to start the project is:
 composer run dev
 ```
 
-This script starts the Laravel development server, the queue process, Laravel Pail, and Vite concurrently.
+This script starts the Laravel development server and Vite concurrently.
 
 Laravel and Vite can also be run separately:
 
