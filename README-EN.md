@@ -50,7 +50,7 @@ cineverse-laravel/
 - `database/`: contains the test SQL database.
 - `docs/`: contains the technical documentation and Markdown (`.md`) files with complementary information and test results.
 - `src/`: contains the complete Laravel project and the integrated Vue frontend.
-- The videos included in the root of the repository show the website in operation.
+- The repository includes a video showing the website in operation.
 
 ## Getting started
 
